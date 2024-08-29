@@ -11,6 +11,28 @@
         .my-link-style:hover{
             text-decoration: underline;
         }
+        .feedback{
+            background: #0d0442;
+            padding: 7% 10%;
+        }
+        .hr-style{
+            border: 5px dotted white;
+            border-bottom: none;
+            width: 50px;
+            margin: 0 auto;
+        }
+        .carousel-item{
+            padding: 5% 15%;
+            text-align: center;
+            font-style: italic;
+        }
+        .feedback-img{
+            width: 120px;
+            height: auto;
+        }
+        .carousel-indicators{
+            bottom:  -20px;
+        }
     </style>
 
     <title>Nasif Rahman</title>
@@ -18,26 +40,38 @@
 </head>
 <body>
     <div class="container">
-        <header class="bg-primary">
-            <div class="row">
-                <div class="col-lg-5 m-auto">
-                    <h1 class="text-white text-center ms-3 py-2">Learn With Nasif</h1>
-                </div>
-            
-                <div class="col-lg-7">
-                    <ul class="nav py-3 justify-content-center">
-                        <li class="nav-item"><a class="nav-link text-white my-link-style" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link text-white my-link-style" href="#">Tutorial</a></li>
-                        <li class="nav-item"><a class="nav-link text-white my-link-style" href="#">Contact Me</a></li>
-                        <li class="nav-item"><a class="nav-link text-white my-link-style" href="#about-me">About Me</a></li>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">N/T</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#tutorial">Tutorial</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about-me">AboutMe</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact-me">Contact</a>
+                      </li>
+                      <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#review" tabindex="-1" aria-disabled="true">Review</a>
+                      </li> -->
                     </ul>
+                  </div>
                 </div>
-            </div>
-            
+              </nav>
         </header>
         <main>
             <!-- Service -->
-            <div class="service-section bg-light pt-3">
+            <div class="service-section bg-light p-3">
                 <div class="title text-center mb-3">
                     <h3 class="font-weight-bolder">Service</h3>
                 </div>
@@ -72,7 +106,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-3">
-                        <img class="p-3 img-fluid rounded-circle" src="dp.jpg" alt="Profile Picture"/>
+                        <img class="p-3 img-fluid rounded-circle align-self-center" src="dp.jpg" alt="Profile Picture"/>
                     </div>
                     <div class="col-md-9 mt-3">
                         <p class="px-5">
@@ -98,9 +132,235 @@
                     </div>
                 </div>
              </div>
+
+             <!-- Tutorial -->
+            <div id="tutorial" class="tutorial-section my-5">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h4 class="card-title">HSC ICT</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit animi ad alias quam at tenetur facilis. Recusandae beatae, hic dolorem animi voluptate voluptatibus atque corrupti deleniti commodi doloremque at sequi?                            
+                                </p>
+                                <div class="d-grid gap-2">
+                                    <button 
+                                    class="btn btn-outline-dark btn-success  text-white"
+                                     data-bs-toggle="tooltip" 
+                                     data-bs-placement="top" 
+                                     title="Tooltip on right"
+                                    >
+                                        BUY NOW
+                                        <span class="badge bg-primary rounded-pill">new</span>
+                                    </button>
+                                    <button class="btn btn-outline-dark btn-dark text-white">
+                                        DETAILS
+                                    </button>
+                                </div>
+                                <a class="card-link stretched-link" target="_blank" href="https://www.youtube.com/watch?v=hXNglSpEv5Q"></a>
+                            </div>
+                            <img class="card-img-bottom" src="dp.jpg"/>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h4 class="card-title">HSC ICT</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit animi ad alias quam at tenetur facilis. Recusandae beatae, hic dolorem animi voluptate voluptatibus atque corrupti deleniti commodi doloremque at sequi?                            
+                                </p>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-dark btn-success  text-white" 
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="right"
+                                    title="Click here to buy the course"
+                                    >
+                                        BUY NOW
+                                        <span class="badge bg-primary rounded-pill">new</span>
+                                    </button>
+                                    <button class="btn btn-outline-dark btn-dark text-white">
+                                        DETAILS
+                                    </button>
+                                </div>
+                                <a class="card-link stretched-link" target="_blank" href="https://www.youtube.com/watch?v=hXNglSpEv5Q"></a>
+                            </div>
+                            <img class="card-img-bottom" src="dp.jpg"/>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h4 class="card-title">HSC ICT</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit animi ad alias quam at tenetur facilis. Recusandae beatae, hic dolorem animi voluptate voluptatibus atque corrupti deleniti commodi doloremque at sequi?                            
+                                </p>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-dark btn-success  text-white"
+                                    data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right"
+                                    >
+                                        BUY NOW
+                                    </button>
+                                    <button class="btn btn-outline-dark btn-dark text-white">
+                                        DETAILS
+                                    </button>
+                                </div>
+                                <a class="card-link stretched-link" target="_blank" href="https://www.youtube.com/watch?v=hXNglSpEv5Q"></a>
+                            </div>
+                            <img class="card-img-bottom" src="dp.jpg"/>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h4 class="card-title">HSC ICT</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit animi ad alias quam at tenetur facilis. Recusandae beatae, hic dolorem animi voluptate voluptatibus atque corrupti deleniti commodi doloremque at sequi?                            
+                                </p>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-dark btn-success  text-white">
+                                        BUY NOW
+                                        <!-- <span class="badge bg-primary rounded-pill">new</span> -->
+                                    </button>
+                                    <button class="btn btn-outline-dark btn-dark text-white">
+                                        DETAILS
+                                    </button>
+                                </div>
+                                <a class="card-link stretched-link" target="_blank" href="https://www.youtube.com/watch?v=hXNglSpEv5Q"></a>
+                            </div>
+                            <img class="card-img-bottom" src="dp.jpg"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- carosel/slider -->
+             <div class="feedback text-white">
+                <div class="title">
+                    <h3 class="font-weight-bolder text-center">FeedBack</h3>
+                    <hr class="hr-style">
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-interval="2000" data-pause="hover">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <p>item 1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, iste tempora neque cum sapiente ut. Aperiam sed, tempora doloremque ducimus, fugiat eum, animi dolorem harum assumenda atque autem voluptate unde.</p>
+                                <img class="feedback-img rounded-circle mb-3" src="dp.jpg" alt="">
+                                <h6>Nasif Rahman</h6>
+                              </div>
+                              <div class="carousel-item">
+                                <p>item 2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, iste tempora neque cum sapiente ut. Aperiam sed, tempora doloremque ducimus, fugiat eum, animi dolorem harum assumenda atque autem voluptate unde.</p>
+                                <img class="feedback-img rounded-circle mb-3" src="dp.jpg" alt="">
+                                <h6>Nasif Rahman</h6>
+                              </div>
+                              <div class="carousel-item">
+                                <p>item 3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, iste tempora neque cum sapiente ut. Aperiam sed, tempora doloremque ducimus, fugiat eum, animi dolorem harum assumenda atque autem voluptate unde.</p>
+                                <img class="feedback-img rounded-circle mb-3" src="dp.jpg" alt="">
+                                <h6>Nasif Rahman</h6>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+            <!-- toggleable dynamic tab -->
+             <div class="other-section my-5">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a data-bs-toggle="pill" class="nav-link active" href="#edu">Education</a></li>
+                    <li class="nav-item"><a data-bs-toggle="pill" class="nav-link" href="#skill">Skill</a></li>
+                    <li class="nav-item"><a data-bs-toggle="pill" class="nav-link" href="#hobby">Hobby</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="edu" class="tab-pane active">
+                        <div class="title text-center">
+                            <h3 class="text-weight-bolder">Educartion</h3>
+                        </div>
+                        <div class="table">
+                            <table class="table table-hover border table-light text-center">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Degree</th>
+                                        <th>Institute</th>
+                                        <th>Passing Year</th>
+                                        <th>Result</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>BSc</td>
+                                        <td>American International University-AIUB</td>
+                                        <td>2024</td>
+                                        <td>3.81</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HSC</td>
+                                        <td>Notre Dame College-Mymensingh</td>
+                                        <td>2018</td>
+                                        <td>5.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SSC</td>
+                                        <td>Sherpur Govt. Victoria Aademy</td>
+                                        <td>2018</td>
+                                        <td>5.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="skill" class="tab-pane fade">2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repellat aliquam at quasi facere exercitationem error? Quaerat quibusdam repudiandae doloremque quam laborum inventore a ullam eligendi. Autem omnis nemo id.</div>
+                    <div id="hobby" class="tab-pane fade">3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repellat aliquam at quasi facere exercitationem error? Quaerat quibusdam repudiandae doloremque quam laborum inventore a ullam eligendi. Autem omnis nemo id.</div>
+                </div>
+
+             </div>
+
+             <!-- media object -->
+             <div class="media-section">
+                 <div class="title text-center">
+                     <h3 class="font-weight-bolder">My Blogs</h3>
+                 </div>
+ 
+                 <div class="d-flex border p-3 mt-3 align-items-center">
+                     <img style="width: 80px;" class="rounded-circle me-3" src="dp.jpg" alt="Profile Picture">
+                     <div>
+                         <h5>I love teaching</h5>
+                         <p>
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur laborum itaque quam voluptatem quidem corrupti rerum sequi, error ullam praesentium. Eveniet voluptatem autem et fuga aut nisi, officiis reprehenderit aspernatur?
+                         </p>
+                     </div>
+                 </div>
+             
+                 <div class="d-flex border p-3 mt-3 align-items-center">
+                     <img style="width: 80px;" class="rounded-circle me-3" src="dp.jpg" alt="Profile Picture">
+                     <div>
+                         <h5>I love teaching</h5>
+                         <p>
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur laborum itaque quam voluptatem quidem corrupti rerum sequi, error ullam praesentium. Eveniet voluptatem autem et fuga aut nisi, officiis reprehenderit aspernatur?
+                         </p>
+                     </div>
+                 </div>
+             </div>
     
              <!-- Review -->
-              <div class="bg-light text-center">
+              <div class="review bg-light text-center">
                 <div class="title mb-3">
                     <h3 class="font-weight-bolder">Review</h3>
                 </div>
@@ -135,20 +395,23 @@
                 </div>
               </div>
 
-            <!-- toggleable dynamic tab -->
-             <div class="other-section my-5">
-                <ul class="nav nav-pills">
-                    <li class="nav-item"><a data-bs-toggle="pill" class="nav-link active" href="#edu">Education</a></li>
-                    <li class="nav-item"><a data-bs-toggle="pill" class="nav-link" href="#skill">Skill</a></li>
-                    <li class="nav-item"><a data-bs-toggle="pill" class="nav-link" href="#hobby">Hobby</a></li>
-                </ul>
-                <div class="tab-content">
-                    <div id="edu" class="tab-pane active">1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque corrupti, eum facilis, ut obcaecati aliquid voluptatum, nostrum itaque molestias laudantium officiis aspernatur ullam quo sapiente! Nesciunt dolore provident doloribus nihil!</div>
-                    <div id="skill" class="tab-pane fade">2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repellat aliquam at quasi facere exercitationem error? Quaerat quibusdam repudiandae doloremque quam laborum inventore a ullam eligendi. Autem omnis nemo id.</div>
-                    <div id="hobby" class="tab-pane fade">3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repellat aliquam at quasi facere exercitationem error? Quaerat quibusdam repudiandae doloremque quam laborum inventore a ullam eligendi. Autem omnis nemo id.</div>
+              <!-- contact me -->
+            <div class="section-contact-me bg-secondary p-3" id="contact-me">
+                <div class="title p-2">
+                    <h3 class="font-weight-bolder text-center m-4">Contact Me</h3>
+                    <hr class="hr-style" style="border-color: black;">
                 </div>
-
-             </div>
+                <div class="mx-5">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control">
+                    <label for="message">Message:</label>
+                    <textarea type="email" class="form-control"></textarea>
+                    <button class="btn btn-success me-auto mt-2">Sent</button>
+                    <button class="btn btn-danger me-auto mt-2">Reset</button>
+                </div>
+            </div>
             
         </main>
         <footer class="bg-dark">
